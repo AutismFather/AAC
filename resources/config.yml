@@ -1,0 +1,258 @@
+# The AAC plugin is provided as a tool for players to allow basic communication via mouse click rather than typing on a keyboard.
+# This plugin is for general use only, not for sale or resale.
+
+# Feel free to change anything in the config you like, remember that icons should be named the same as items are in the game.
+# - https://minecraft.wiki/w/Item#List_of_items
+
+# This project is open source. The code can be found here:
+# -
+
+settings:
+  debug: false
+  title: AAC - Communications Panel
+  helptext: AAC (Augmentative and Alternative Communication) is a plugin which helps players to communicate without the need to type into chat. To begin, type in /aac get
+  reloadtext: AAC configuration file has been reloaded
+  cooldown_in_seconds: 5
+
+# Tool to use to get the player started
+# This will be an item that they can hold in their hand to click and open the GUI
+tool:
+  icon: knowledge_book
+  name: Open AAC Interface
+  lore: Click to open Augmentative and Alternative Communication Graphical Interface
+
+# Panel items - icons with text to put into each inventory slot of the GUI
+panel:
+  slot01:
+    icon: beacon
+    name: Hello
+    lore: For greeting players
+    output: Hello!
+  slot02:
+    icon: barrier
+    name: Goodbye
+    lore: For when players are leaving
+    output: Good-bye!
+  slot03:
+    icon: player_head
+    name: Welcome
+    lore: Welcome a player
+    output: Welcome!
+  slot04:
+    icon: daylight_detector
+    name: Good Morning
+    lore: Wish everyone a good morning
+    output: Good morning everyone!
+  slot05:
+    icon: compass
+    name: Good Afternoon
+    lore: Wish everyone a good afternoon
+    output: Good afternoon everyone!
+  slot06:
+    icon: red_bed
+    name: Good Night
+    lore: Wish everyone a good night
+    output: Good night everyone!
+  slot07:
+    icon: red_tulip
+    name: How are you?
+    lore: Ask how a person is doing
+    output: How are you?
+  slot08:
+    icon: potato
+    name: I am fine
+    lore: Positive response to someone asking how you are
+    output: I am fine, thanks.
+  slot09:
+    icon: poisonous_potato
+    name: I am not fine
+    lore: Negative response to someone asking how you are
+    output: I am not doing well.
+  slot10:
+    icon: green_concrete
+    name: 'Yes'
+    lore: Answer a question with "Yes"
+    output: Yes.
+  slot11:
+    icon: red_concrete
+    name: 'No'
+    lore: Answer a question with "No"
+    output: No.
+  slot12:
+    icon: yellow_concrete
+    name: Maybe
+    lore: Maybe
+    output: Maybe
+  slot13:
+    icon: sunflower
+    name: Okay
+    lore: To show agreement
+    output: Okay.
+  slot14:
+    icon: water_bucket
+    name: I know
+    lore: I know
+    output: I know.
+  slot15:
+    icon: bucket
+    name: I don't know
+    lore: I don't know
+    output: I don't know
+  slot16:
+    icon: sweet_berries
+    name: Please
+    lore: Say please
+    output: Please?
+  slot17:
+    icon: glow_berries
+    name: Thank you
+    lore: Say thank you
+    output: Thank you!
+  slot18:
+    icon: carrot
+    name: You're Welcome
+    lore: For when someone thanks you
+    output: You're welcome!
+  slot19:
+    icon: experience_bottle
+    name: That is Good
+    lore: Positively acknowledge someone
+    output: That's good!
+  slot20:
+    icon: sugar
+    name: Sorry
+    lore: Apologize to someone
+    output: I'm sorry
+  slot21:
+    icon: big_dripleaf
+    name: No Problem
+    lore: Alternative way of saying "Thank You"
+    output: No problem!
+  slot22:
+    icon: ender_pearl
+    name: Be Right Back
+    lore: Tell others that you need to leave temporarily
+    output: I will be right back.
+  slot23:
+    icon: ender_eye
+    name: I'm back
+    lore: Tell others that you are back.
+    output: I'm back.
+  slot24:
+    icon: hopper
+    name: Welcome Back
+    lore: Welcome someone back
+    output: Welcome back!
+  slot25:
+    icon: chorus_fruit
+    name: Come Here
+    lore: Ask someone to come to you
+    output: Come here, please.
+  slot26:
+    icon: lead
+    name: Follow Me
+    lore: Ask someone to follow you
+    output: Follow me please.
+  slot27:
+    icon: diamond_pickaxe
+    name: Go Mining
+    lore: Ask others to go mining
+    output: Does anyone want to go mining with me?
+  slot28:
+    icon: diamond_sword
+    name: Mini-Games
+    lore: Ask if anyone wants to play a minigame
+    output: Does anyone want to play a mini-game?
+  slot29:
+    icon: piston
+    name: Move
+    lore: Ask player to move
+    output: Can you please move?
+  slot30:
+    icon: cooked_chicken
+    name: Hungry
+    lore: Ask for food
+    output: Can someone please give me food?
+  slot31:
+    icon: cake
+    name: Birthday
+    lore: Tell people it's your birthday
+    output: It's my birthday today!
+  slot32:
+    icon: ladder
+    name: Need Help
+    lore: Ask others for help
+    output: Can someone help me please?
+  slot33:
+    icon: fishing_rod
+    name: Go Fishing
+    lore: Ask players if they want to go fishing
+    output: Does anyone want to go fishing with me?
+  slot34:
+    icon: raw_gold_block
+    name: How to go to spawn?
+    lore: Ask how to get back to spawn
+    output: How do I get back to spawn?
+  slot35:
+    icon: red_wool
+    name: How to protect base?
+    lore: Ask how to protect your base
+    output: How do I protect my base?
+  slot36:
+    icon: emerald
+    name: Emeralds
+    lore: Ask for emeralds
+    output: Can I please have some emeralds?
+  slot37:
+    icon: diamond
+    name: Diamonds
+    lore: Ask for diamonds
+    output: Can I please have some diamonds?
+  slot38:
+    icon: netherite_ingot
+    name: Netherite
+    lore: Ask for netherite
+    output: Can I please have some netherite?
+  slot39:
+    icon: lantern
+    name: I like it
+    lore: Show your approval
+    output: I like it!
+  slot40:
+    icon: soul_lantern
+    name: I don't like it
+    lore: When you don't like it
+    output: I don't like it.
+  slot41:
+    icon: charcoal
+    name: What's wrong?
+    lore: Ask someone what is wrong
+    output: What's wrong?
+  slot42:
+    icon: nether_star
+    name: Finished
+    lore: Indicate that your task is complete
+    output: I'm finished.
+
+# The icon to go to the next and previous pages
+# To use a player head, make the material PLAYER_HEAD and give the texture of the head in texture:
+# Otherwise, just select a Minecraft material item such as BEACON
+nexticon:
+  name: Next Page
+  description: Click to go to the next page
+  material: PLAYER_HEAD
+  texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM5OWU1ZGE4MmVmNzc2NWZkNWU0NzJmMzE0N2VkMTE4ZDk4MTg4NzczMGVhN2JiODBkN2ExYmVkOThkNWJhIn19fQ==
+
+previousicon:
+  name: Previous Page
+  description: Click to go to the previous page
+  material: PLAYER_HEAD
+  texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzZlYmFhNDFkMWQ0MDVlYjZiNjA4NDViYjlhYzcyNGFmNzBlODVlYWM4YTk2YTU1NDRiOWUyM2FkNmM5NmM2MiJ9fX0=
+
+strings:
+  error_no_console: Sorry, we can't give an item to a console.
+  error_no_permission: You do not have permission to do that.
+  error_player_not_provided: You must provide the name of the player.
+  error_player_not_online: Sorry, that player does not appear to be online.
+  error_player_in_cooldown: Sorry but to prevent spam, you must wait {SECONDS} seconds to send another message.
+  success_tool_given_to_player: You've successfully given the AAC tool to the player.

@@ -1,0 +1,24 @@
+name: AAC
+version: '${version}'
+main: com.autcraft.aac.AAC
+api-version: '1.20'
+load: STARTUP
+commands:
+  aac:
+    description: Main command
+permissions:
+  aac.help:
+    description: Main help command for AAC
+    default: true
+  aac.get:
+    description: Get the panel tool
+    default: true
+  aac.give:
+    description: Give the panel tool to another player
+    default: op
+  aac.open:
+    description: Open the main GUI for AAC
+    default: true
+  aac.reload:
+    description: Reloads the config
+    default: op
