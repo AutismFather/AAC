@@ -7,6 +7,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
@@ -32,7 +33,8 @@ public class Click implements Listener {
         ItemStack item = player.getInventory().getItemInMainHand();
 
         // Check to see if the item in the player's hand is the AAC Tool
-        if (inventoryGUI.isItemPanelTool(item)) {
+        // Make sure it's not a physical action, such as stepping onto a pressure plate
+        if (inventoryGUI.isItemPanelTool(item) && e.getAction() != Action.PHYSICAL) {
             // If, for whatever reason, the player doesn't have permission to open the gui
             if( !player.hasPermission("aac.open") ){
                 player.sendMessage(plugin.getString("error_no_permission"));
