@@ -31,10 +31,14 @@ public class Click implements Listener {
         Player player = (Player) e.getPlayer();
         InventoryGUI inventoryGUI = plugin.getInventoryGUI();
         ItemStack item = player.getInventory().getItemInMainHand();
+        ItemStack itemOffHand = player.getInventory().getItemInOffHand();
+
+        // The AAC tool has to be in either the main hand or offhand to work
+        boolean validItem = inventoryGUI.isItemPanelTool(item) || inventoryGUI.isItemPanelTool(itemOffHand);
 
         // Check to see if the item in the player's hand is the AAC Tool
         // Make sure it's not a physical action, such as stepping onto a pressure plate
-        if (inventoryGUI.isItemPanelTool(item) && e.getAction() != Action.PHYSICAL) {
+        if (validItem && e.getAction() != Action.PHYSICAL) {
             // If, for whatever reason, the player doesn't have permission to open the gui
             if( !player.hasPermission("aac.open") ){
                 player.sendMessage(plugin.getString("error_no_permission"));
@@ -97,6 +101,9 @@ public class Click implements Listener {
                        // Message sent successfully, now apply cooldown
                        plugin.addPlayerCooldown(player);
                    }
+               }
+               else {
+                   plugin.toConsole("Error: No output was stored because the plugin could not set the persistent data for the panel option.");
                }
            }
 

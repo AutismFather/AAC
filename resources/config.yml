@@ -233,6 +233,18 @@ panel:
     name: Finished
     lore: Indicate that your task is complete
     output: I'm finished.
+  slot43:
+    icon: player_head
+    name: I'm stuck!
+    lore: Let players know when you are stuck and can't get out
+    output: Help, I'm stuck!
+    player: Dinnerbone
+  slot44:
+    icon: player_head
+    name: Request Sleep
+    lore: Ask for others to sleep
+    output: Can everyone please sleep to pass the night?
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY2MjQzM2ExZmY1ZWNjOGY4ZDRlYjg1NGUwYmNmODUwZmU2ZjQyMzIxOGYyZGI0YzBiMDMzZWU1YTNlYTY1NCJ9fX0=
 
 # The icon to go to the next and previous pages
 # To use a player head, make the material PLAYER_HEAD and give the texture of the head in texture:
